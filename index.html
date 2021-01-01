@@ -9,24 +9,27 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="header__logo">
-        <i class="fab fa-youtube"></i>
-        <span class="logo__title">YouTube</span>
-      </div>
-      <div class="header__icons">
-        <i class="fas fa-search"></i>
-        <i class="fas fa-ellipsis-v"></i>
-      </div>
-    </header>
+    <div class="fixed__container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header__logo">
+          <i class="fab fa-youtube"></i>
+          <span class="logo__title">YouTube</span>
+        </div>
+        <div class="header__icons">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </header>
 
-    <!-- Player -->
-    <section class="player">
-      <video src="video/video.mp4" controls></video>
-    </section>
+      <!-- Player -->
+      <section class="player">
+        <video src="video/video.mp4" controls></video>
+      </section>
+    </div>
 
     <!-- Info and Up Next -->
     <div class="InfoAndUpNext">
@@ -104,6 +107,7 @@
               <img
                 src="https://img.youtube.com/vi/l6g1T1R8x1U/maxresdefault.jpg"
                 alt="thumbnail"
+                class="thumbnail__img"
               />
             </div>
             <div class="item__info">
