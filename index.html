@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <script
+      src="https://kit.fontawesome.com/01b5dbc634.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <i class="fab fa-youtube"></i>
+        <span class="logo__title">YouTube</span>
+      </div>
+      <div class="header__icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+
+    <!-- Player -->
+    <section class="player">
+      <video src="video/video.mp4" controls></video>
+    </section>
+
+    <!-- Video Info -->
+    <section class="info">
+      <!-- Metadata -->
+      <div class="info__metadata">
+        <ul class="metadata__hashtags">
+          <li class="hashtag">#DamienRice</li>
+          <li class="hashtag">#VanMorrison</li>
+          <li class="hashtag">#CrazyLove</li>
+        </ul>
+        <div class="metadata__description">
+          <span class="description__title"
+            >Damien Rice - Crazy Love (Van Morrison Cover)
+          </span>
+          <button class="description__moreBtn">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="metadata__views">
+          <span>views 65,240회 - 2020. 8. 25</span>
+        </div>
+      </div>
+      <!-- Actions -->
+      <ul class="info__actions">
+        <li class="action">
+          <button>
+            <i class="fas fa-thumbs-up"></i>
+            <span>2.3k</span>
+          </button>
+        </li>
+        <li class="action">
+          <button>
+            <i class="fas fa-thumbs-down"></i>
+            <span>18</span>
+          </button>
+        </li>
+        <li class="action">
+          <button>
+            <i class="fas fa-share"></i>
+            <span>Share</span>
+          </button>
+        </li>
+        <li class="action">
+          <button>
+            <i class="fas fa-plus"></i>
+            <span>Save</span>
+          </button>
+        </li>
+        <li class="action">
+          <button>
+            <i class="fas fa-flag"></i>
+            <span>Report</span>
+          </button>
+        </li>
+      </ul>
+      <!-- Channel -->
+      <div class="info__channel">
+        <div class="channel__profile">
+          <img src="img/avatar.jpeg" alt="avatar" class="profile__avatar" />
+          <div class="profile__info">
+            <span class="profile__name">Damien Rice</span>
+            <span class="profile__subscribers">37M Subscribers</span>
+          </div>
+        </div>
+        <button class="channel__subscribe">subscribe</button>
+      </div>
+    </section>
+
+    <!-- Up Next -->
+    <section class="UpNext">
+      <span class="UpNext__title">Up Next</span>
+      <ul class="UpNext__list">
+        <li class="Upnext__item">
+          <img src="img/avatar.jpeg" alt="thumbnail" class="item__thumbnail" />
+          <div class="item__info">
+            <span class="info__title">Damien Rice - 9 Crimes</span>
+            <span class="info__author">Damien Rice</span>
+            <span class="info__views">154K views</span>
+          </div>
+        </li>
+        <li class="Upnext__item">
+          <img src="img/avatar.jpeg" alt="thumbnail" class="item__thumbnail" />
+          <div class="item__info">
+            <span class="info__title">Damien Rice - Elephant</span>
+            <span class="info__author">Damien Rice</span>
+            <span class="info__views">14K views</span>
+          </div>
+        </li>
+        <li class="Upnext__item">
+          <img src="img/avatar.jpeg" alt="thumbnail" class="item__thumbnail" />
+          <div class="item__info">
+            <span class="info__title">Damien Rice - Cannonball</span>
+            <span class="info__author">Damien Rice</span>
+            <span class="info__views">82K views</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
