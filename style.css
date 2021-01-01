@@ -1,0 +1,210 @@
+:root {
+  --background-color: #212121;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  color: white;
+  padding: 8px 14px;
+  font-size: 20px;
+}
+
+.header .header__logo {
+  font-weight: 600;
+}
+
+.header .header__logo i {
+  color: red;
+  cursor: pointer;
+}
+
+.header .header__icons i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Player */
+.player {
+  text-align: center;
+  background-color: black;
+}
+
+.player video {
+  width: 100%;
+  max-width: 900px;
+  outline: none;
+}
+
+/* Video Info */
+
+/* Metadata */
+.info {
+  padding: 10px;
+  flex: 0 1 50%;
+}
+
+.info__metadata .metadata__hashtags {
+  display: flex;
+  color: blue;
+  font-size: 14px;
+}
+
+.metadata__hashtags .hashtag {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.info__metadata .metadata__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__metadata .metadata__views {
+  opacity: 0.6;
+  font-size: 12px;
+}
+
+/* Action Buttons */
+.info__actions {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+
+.action button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.action button i {
+  margin-bottom: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.action:first-child button i {
+  color: blue;
+}
+
+/* Channel */
+.info__channel {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0px;
+}
+
+.channel__profile {
+  display: flex;
+  align-items: center;
+}
+
+.channel__profile .profile__avatar {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(170, 166, 166);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.channel__profile .profile__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel__profile .profile__subscribers {
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.info__channel .channel__subscribe {
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  padding: 0px 6px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.info__channel .channel__subscribe:hover {
+  opacity: 0.6;
+}
+
+/* Up Next */
+.UpNext {
+  padding: 10px 10px;
+  flex: 0 1 50%;
+}
+
+.UpNext__title {
+  opacity: 0.6;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.UpNext__item {
+  display: flex;
+  align-items: center;
+}
+
+.UpNext__item .item__thumbnail {
+  flex: 0 1 40%;
+  margin-right: 10px;
+}
+
+.UpNext__item .item__info {
+  flex: 0 1 60%;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+}
+
+.UpNext__item .item__thumbnail img {
+  width: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.UpNext__item .item__info .info__author,
+.UpNext__item .item__info .info__views {
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.InfoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .InfoAndUpNext {
+    flex-direction: row;
+  }
+}
